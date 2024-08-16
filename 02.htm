@@ -1,0 +1,925 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="./style.css">
+	<style>
+		body {
+			margin: 0;
+			font-family: font1;
+		}
+
+		#header {
+			border: 1px solid #ccc;
+			height: 100px;
+		}
+
+		#header>#menu {
+			position: relative;
+			border: 1px solid white;
+			height: 100px;
+			width: 1150px;
+			margin: 0 auto;
+
+		}
+
+		#header>#menu>#barname {
+			float: left;
+			margin-top: 70px;
+			margin-left: 10px;
+		}
+
+		#header>#menu>#barname>img {
+			padding: 5px;
+		}
+
+		#header>#menu>.zaban {
+			position: absolute;
+			margin-left: 30px;
+			color: orange;
+
+		}
+
+		#header>#menu>.zaban>#zaban1 {
+			/* border: 1px solid black; */
+			width: 50px;
+			float: left;
+			font-size: small;
+		}
+
+		#header>#menu>.zaban>#zaban2 {
+			/* border: 1px solid black; */
+			width: 50px;
+			float: left;
+			font-size: small;
+		}
+
+		#header>#menu>.zaban>#asli {
+			/* border: 1px solid black; */
+			width: 100px;
+			float: left;
+			font-size: small;
+		}
+
+		#header>#menu>#iran {
+			position: absolute;
+			float: left;
+			margin-left: -170px;
+
+		}
+
+		#header>#menu>#linkk {
+			/* border:1px solid orange; */
+			height: 20px;
+			width: 200px;
+			margin: 20px auto;
+			position: relative;
+			top: -160px;
+			left: 150px;
+		}
+
+		#header>#menu>#items {
+			/* border:1px solid orange; */
+			width: 580px;
+			height: 30px;
+			margin-left: 400px;
+			margin-top: 70px;
+			position: relative;
+		}
+
+		#header>#menu>#items>#aks {
+			/* border:1px solid orange; */
+			margin: 100px auto;
+		}
+
+		#header>#menu>#items .item {
+			/* border: 1px solid black ; */
+			height: 100px;
+			width: 80px;
+			float: right;
+			font-family: font1;
+			text-align: right;
+			font-size: 11px;
+			margin-top: 10px;
+
+		}
+
+		
+		input {
+			text-align: right;
+			outline: orange;
+			border:1px solid orange;
+			border-radius: 5px;
+			font-family: font1;
+			width: 300px;
+			font-size: 10px;
+		}
+
+		#slider {
+			position: relative;
+			border-top: 4px solid red;
+			height: 400px;
+			margin: 0 auto;
+		}
+
+		#slider>#gal {
+			/* border: 1px solid red; */
+			height: 400px;
+		}
+
+		#slider>#left {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: url(111.png) no-repeat 50%;
+			background-size: 5%;
+			opacity: 0.9;
+			/* border:1px solid black ; */
+			width: 180px;
+			height: 100%;
+		}
+
+		#slider>#right {
+			position: absolute;
+			top: 0;
+			right: 0;
+			background: url(flesh.png) no-repeat 50%;
+			background-size: 5%;
+			opacity: 0.9;
+			/* border:1px solid black ;	 */
+			width: 180px;
+			height: 100%;
+		}
+
+		#slider>#gal>.aks {
+			width: 20%;
+			height: 80%;
+		}
+
+		#slider>#gal>.aks>img {
+			position: absolute;
+			width: 800px;
+			height: 100%;
+			margin-left: 420px;
+		}
+
+		#khadamat {
+			position: relative;
+			border-top: 4px solid blue;
+			height: 500px;
+		}
+
+		#khadamat>#half {
+			position: absolute;
+			top: 250px;
+			/* border:1px solid black ; */
+			height: 250px;
+			width: 1518px;
+			background: rgba(0, 120, 232, 8)
+		}
+
+		#khadamat>#joda {
+			position: absolute;
+			top: 50px;
+			left: 240px;
+			/* border:1px solid blueviolet ; */
+			width: 300px;
+			height: 450px;
+			background: rgba(0, 36, 204, 8);
+		}
+
+		#khadamat>#joda1 {
+			position: absolute;
+			top: 50px;
+			left: 640px;
+			/* border:1px solid blueviolet ; */
+			width: 300px;
+			height: 450px;
+			background: rgba(0, 36, 204, 8);
+		}
+
+		#khadamat>#joda2 {
+			position: absolute;
+			top: 50px;
+			left: 1040px;
+			/* border:1px solid blueviolet ; */
+			width: 300px;
+			height: 450px;
+			background: rgba(0, 36, 204, 8);
+		}
+
+		#khadamat>#joda>h5 {
+			text-align: right;
+			padding-right: 25px;
+			font-size: 13px;
+			color: azure;
+			font-family: font1;
+			line-height: 25px;
+		}
+
+		#khadamat>#joda1>h5 {
+			text-align: right;
+			padding-right: 25px;
+			font-size: 13px;
+			color: azure;
+			font-family: font1;
+			line-height: 25px;
+		}
+
+		#khadamat>#joda2>h5 {
+			text-align: right;
+			padding-right: 25px;
+			font-size: 13px;
+			color: azure;
+			font-family: font1;
+			line-height: 25px;
+		}
+
+		#akhbar {
+			position: relative;
+			border: 1px solid #ccc;
+			height: 300px;
+			background: url("./page-background.png");
+		}
+
+		#akhbar>h1 {
+			font-size: large;
+			font-family: font1;
+			float: right;
+			margin-right: 160px;
+			margin-top: 20px;
+		}
+
+		#akhbar>#khabar {
+			position: absolute;
+			top: 70px;
+			left: 900px;
+			/* border: 1px solid black ;  */
+			width: 400px;
+			height: 180px;
+			float: right;
+		}
+
+		#akhbar>#khabar>h3 {
+			float: right;
+			font-size: small;
+		}
+
+		#akhbar>#khabar>h4 {
+			float: right;
+			margin-right: 50px;
+		}
+
+		#akhbar>#khabar1 {
+			position: absolute;
+			top: 70px;
+			left: 400px;
+			/* border: 1px solid black ; */
+			width: 400px;
+			height: 180px;
+			float: right;
+		}
+
+		#akhbar>#khabar1>h3 {
+			float: right;
+			font-size: small;
+		}
+
+		#akhbar>#khabar1>h4 {
+			float: right;
+			margin-right: 50px;
+			margin-top: 50px;
+		}
+
+		#dastresi_nemoodar {
+			/* border:1px solid #ccc; */
+			height: 400px;
+		}
+
+		#dastresi_nemoodar>#asli {
+			/* border:1px solid black; */
+			width: 1150px;
+			height: 400px;
+			margin: 0 auto;
+		}
+
+		#dastresi_nemoodar>#kadr>img {
+			margin-top: -70px;
+			margin-right: 180px;
+			width: 500px;
+			height: 100px;
+		}
+
+		#dastresi_nemoodar>#asli>#nemoodar {
+			/* border:1px solid black ; */
+			width: 550px;
+			height: 250px;
+			margin-top: 20px;
+		}
+
+		#dastresi_nemoodar>#asli>#nemoodar>img {
+			height: 100%;
+			width: 100%;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi {
+			/* border: 1px solid black; */
+			width: 580px;
+			height: 380px;
+			float: right;
+			margin-top: -250px;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi>#jadval {
+			position: relative;
+			/* border: 1px solid brown; */
+			width: 150px;
+			height: 280px;
+			float: right;
+			margin-right: 30px;
+			margin-top: 35px;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi>#jadval>#icon {
+			position: absolute;
+			/* border: 1px solid blue; */
+			width: 20px;
+			height: 300px;
+			margin-left: 129px;
+			margin-top: -2px;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi>#jadval>#icon>img {
+			margin: 6px auto;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi>#jadval>h4 {
+			text-align: right;
+			font-family: font1;
+			font-size: 14px;
+			line-height: 32px;
+			margin-top: -1px;
+			margin-right: 23px;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi>#jadval1 {
+			position: relative;
+			/* border: 1px solid brown; */
+			width: 150px;
+			height: 280px;
+			float: right;
+			margin-right: 30px;
+			margin-top: 35px;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi>#jadval1>#icon {
+			position: absolute;
+			/* border: 1px solid blue; */
+			width: 20px;
+			height: 300px;
+			margin-left: 129px;
+			margin-top: -2px;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi>#jadval1>#icon>img {
+			margin: 6px auto;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi>#jadval1>h4 {
+			text-align: right;
+			font-family: font1;
+			font-size: 10px;
+			line-height: 32px;
+			margin-top: -1px;
+			margin-right: 23px;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi>#jadval>#icon {
+			position: absolute;
+			/* border: 1px solid blue; */
+			width: 20px;
+			height: 300px;
+			margin-left: 129px;
+			margin-top: -2px;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi>#jadval>#icon>img {
+			margin: 6px auto;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi>#jadval>h4 {
+			text-align: right;
+			font-family: font1;
+			font-size: 10px;
+			line-height: 32px;
+			margin-top: -1px;
+			margin-right: 23px;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi>#jadval2 {
+			position: relative;
+			/* border: 1px solid brown; */
+			width: 180px;
+			height: 280px;
+			float: right;
+			margin-right: 30px;
+			margin-top: 35px;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi>#jadval2>#icon {
+			position: absolute;
+			/* border: 1px solid blue; */
+			width: 20px;
+			height: 300px;
+			margin-left: 160px;
+			margin-top: -2px;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi>#jadval2>#icon>img {
+			margin: 6px auto;
+		}
+
+		#dastresi_nemoodar>#asli>#dastresi>#jadval2>h4 {
+			text-align: right;
+			font-family: font1;
+			font-size: 10px;
+			line-height: 32px;
+			margin-top: -1px;
+			margin-right: 23px;
+		}
+
+		#masouliat {
+			border: 1px solid #ccc;
+			height: 140px;
+			background: #dc3c00;
+		}
+
+		#masouliat>img {
+			margin-right: 210px;
+		}
+
+		#masouliat>#mas {
+			float: right;
+			margin-right: -900px;
+			margin-top: 55px;
+			color: white;
+			font-family: font1;
+			font-size: 13px;
+		}
+
+		#masouliat>#vahed {
+			float: right;
+			margin-right: -620px;
+			margin-top: 55px;
+			color: white;
+			font-family: font1;
+			font-size: 13px;
+		}
+
+		#masouliat>#kanoon {
+			float: right;
+			margin-right: -290px;
+			margin-top: 55px;
+			color: white;
+			font-family: font1;
+			font-size: 13px;
+		}
+
+		#masouliat>#mooze {
+			float: right;
+			margin-right: 0;
+			margin-top: 55px;
+			color: white;
+			font-family: font1;
+			font-size: 13px;
+		}
+
+		#ertebat {
+			border: 1px solid #ccc;
+			height: 600px;
+			background: url("./page-background.png");
+		}
+
+		#ertebat>#s1 {
+			/* border: 1px solid black; */
+			width: 270px;
+			height: 450px;
+			float: right;
+			margin-right: 190px;
+			margin-top: 50px;
+			text-align: right;
+		}
+
+		#ertebat>#s1>#s12 {
+			/* border: 1px solid red; */
+			line-height: 23px;
+			font-family: font1;
+			font-size: 13px;
+			float: left;
+			text-align: right;
+			margin-top: -25px;
+			color: rgba(15, 38, 202);
+		}
+
+		#ertebat>.s2 {
+			/* border: 1px solid black; */
+			width: 205px;
+			height: 450px;
+			float: right;
+			margin-right: 50px;
+			margin-top: 50px;
+			text-align: right;
+		}
+
+		#ertebat>.s2>#s21 {
+			/* border: 1px solid red; */
+			line-height: 22px;
+			font-family: font1;
+			font-size: 13px;
+			float: left;
+			text-align: right;
+			margin-top: -25px;
+			margin-left: 13px;
+			color: rgba(15, 38, 202);
+		}
+
+		#ertebat>.s2>#s22 {
+			/* border: 1px solid red; */
+			line-height: 22px;
+			font-family: font1;
+			font-size: 13px;
+			float: left;
+			text-align: right;
+			margin-top: -25px;
+			color: rgba(15, 38, 202);
+		}
+
+		#ertebat>#s3 {
+			/* border: 1px solid black; */
+			width: 270px;
+			height: 450px;
+			float: right;
+			margin-right: 50px;
+			margin-top: 50px;
+			text-align: right;
+		}
+
+		#ertebat>#s3>#s31 {
+			/* border: 1px solid red; */
+			width: 250px;
+			height: 400px;
+			line-height: 25px;
+			font-family: font1;
+			font-size: 13px;
+			float: left;
+			text-align: right;
+			margin-top: -25px;
+			color: rgba(15, 38, 202);
+		}
+
+		#ertebat>#s4 {
+			/* border: 1px solid black; */
+			width: 270px;
+			height: 450px;
+			float: right;
+			margin-right: 50px;
+			margin-top: 50px;
+			text-align: right;
+		}
+
+		#ertebat>#s4>#s41 {
+			/* border: 1px solid red; */
+			width: 250px;
+			line-height: 23px;
+			font-family: font1;
+			font-size: 13px;
+			float: left;
+			text-align: right;
+			margin-top: -25px;
+			color: rgba(15, 38, 202);
+		}
+
+		img {
+			float: right;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="header">
+		<div id="menu">
+			<div id="barname"> <img src="bale.png" alt="bale">
+				<img src="60.png" alt="60">
+				<img src="iva2.png" alt="iva2">
+				<img src="hope2.png" alt="hope2">
+				<img src="hamkaran.png" alt="hamkaran">
+			</div>
+			<div class="zaban">
+				<div id="zaban1">
+					<h5>english </h5>
+				</div>
+				<div id="zaban2">
+					<h5> عربی </h5>
+				</div>
+				<div id="asli">
+					<h5> صفحه اصلی </h5>
+				</div>
+			</div>
+			<img id="iran" src="parcham.png" alt="iran">
+			<img src="MelliBank1.jpg" width="170px" height="100%">
+			<div id="items">
+				<div class="item"> درباره ما </div>
+				<div class="item"> اخبار </div>
+				<div class="item"> مزایده </div>
+				<div class="item"> واحد های بانک </div>
+				<div class="item"> خدمات بانکی </div>
+				<div class="item"> پادکست </div>
+				<div class="item"> سوالات متداول </div>
+			</div>
+			<div id="linkk">
+				<a id="link_search"> <input placeholder="جستجو"> </a>
+			</div>
+
+		</div>
+	</div>
+	<div id="slider">
+		<div id="gal">
+			<div class="aks">
+				<img src="MelliBank1.jpg">
+
+
+			</div>
+
+
+
+		</div>
+		<div id="left"> </div>
+		<div id="right"> </div>
+
+
+
+
+
+	</div>
+	<div id="khadamat">
+		<div id="half"> </div>
+		<div id="joda">
+			<div class="aks"><img src="left.png"> </div>
+			<h5>
+				<ul>
+					<li>دریافت شناسه شبا</li>
+					<li>طرح ویژه مسکن</li>
+					<li>خدمات ارزی</li>
+					<li>ضمانت نامه</li>
+					<li>سپرده قرض الحسنه</li>
+					<li>سرمایه گذاری کوتاه مدت</li>
+					<li>سرمایه گذاری بلند مدت</li>
+					<li>فروش اوراق بهادر</li>
+				</ul>
+			</h5>
+		</div>
+		<div id="joda1">
+			<div class="aks"><img src="center.png"> </div>
+			<h5>
+				<ul>
+					<li>سامانه بام سازمانی</li>
+					<li>سامانه بام حقیقی و شرکتی</li>
+					<li>سامانه سبا</li>
+					<li>سبا حقوقی BIB</li>
+					<li>بانک افیسر</li>
+					<li>درخواست کارت خوان</li>
+					<li>درخواست درگاه پرداخت اینترنتی</li>
+					<li>اپلیکیشن وپالس</li>
+				</ul>
+			</h5>
+		</div>
+		<div id="joda2">
+			<div class="aks"><img src="right.png"> </div>
+			<h5>
+				<ul>
+					<li> همراه بام ملی </li>
+					<li> همراه بانک ملی </li>
+					<li> اپلیکیشن بله</li>
+					<li> اپلیکیشن ایوا </li>
+					<li> سامانه چک صیادی </li>
+					<li> سامانه قبوض </li>
+					<li> صورت حساب</li>
+					<li> خرید شارژ تلفن همراه </li>
+					<li> استعلام وضعیت کد شهاب </li>
+				</ul>
+			</h5>
+		</div>
+	</div>
+	<div id="akhbar">
+		<h1>اخبار بانک</h1>
+		<div id="khabar">
+			<h3> اهدای 700 دستگاه تبلت توسط بانک ملی ایران به دانش اموزان استان کرمانشاه</h3>
+			<h4>...ادامه</h4>
+		</div>
+		<div id="khabar1">
+			<h3> مسدود سازی دو وبسایت فیشینگ با ادرس جعلی سامانه بام</h3>
+			<h4>...ادامه</h4>
+		</div>
+	</div>
+	<div id="dastresi_nemoodar">
+		<div id="kadr"> <img src="Screenshot.png" alt="kadr"> </div>
+		<div id="asli">
+			<div id="nemoodar"> <img src="Screenshot1.png" alt="nemoodar"> </div>
+			<div id="dastresi">
+				<div id="jadval">
+					<div id="icon"> <img src="saba.jpg" alt="saba">
+						<img src="saba2.jpg" alt="saba2">
+						<img src="rad.jpg" alt="rad">
+						<img src="int.jpg" alt="int">
+						<img src="ma.jpg" alt="ma">
+						<img src="tel.jpg" alt="tel">
+						<img src="bor.jpg" alt="bor">
+						<img src="sat.jpg" alt="sat">
+						<img src="ach.jpg" alt="ach">
+					</div>
+					<h4>
+						سبا<br>
+						سبا حقوقی<br>
+						جشنواره ها<br>
+						خدمات اینترنتی<br>
+						قوانین چک<br>
+						بیمه ملی کارت<br>
+						سامانه تسهیلات<br>
+						کارت اعتباری<br>
+						سقف تراکنش های مالی<br>
+
+					</h4>
+
+				</div>
+				<div id="jadval1">
+					<div id="icon"> <img src="baam.jpg" alt="baam">
+						<img src="sat1.jpg" alt="sat1">
+						<img src="sat2.jpg" alt="sat2">
+						<img src="cel.jpg" alt="cel">
+						<img src="sa.jpg" alt="sa">
+						<img src="hope.jpg" alt="hope">
+						<img src="rad1.jpg" alt="rad1">
+						<img src="cel.q.jpg" alt="cel.q">
+					</div>
+					<h4>
+						بام <br>
+						پایا<br>
+						شناسه شبا<br>
+						بینا<br>
+						سانی<br>
+						اپلیکیشن هپ<br>
+						تقویم دیجیتال ملی<br>
+						طرح صدف<br>
+					</h4>
+
+				</div>
+				<div id="jadval2">
+					<div id="icon"> <img src="iva.png" alt="iva">
+						<img src="sat3.jpg" alt="sat3">
+						<img src="si.jpg" alt="si">
+						<img src="bor.jpg" alt="bor">
+						<img src="ma.jpg" alt="ma">
+						<img src="s60.jpg" alt="s60">
+						<img src="borr.jpg" alt="borr">
+						<img src="mm.jpg" alt="mm">
+					</div>
+					<h4>
+						اپلیکیشن ایوا<br>
+						سامانه چک صیادی<br>
+						ثبت نام واحراز هویت سجام<br>
+						معاملات انلاین بورس<br>
+						پرداخت عوارض خروج از کشور<br>
+						رمز یکبار مصرف (60)<br>
+						ثبت سفارش فروش سهام عدالت<br>
+						ملی پلاس<br>
+					</h4>
+
+				</div>
+			</div>
+
+
+
+
+		</div>
+
+
+
+	</div>
+	<div id="masouliat">
+		<img src="charity.png" alt="charity">
+		<img src="un.png" alt="un">
+		<img src="kanoon.png" alt="kanoon">
+		<img src="mooze.png" alt="mooze">
+		<h4 id="mas"> مسولیت های اجتماعی </h4>
+		<h4 id="vahed"> واحدهای بانکی </h4>
+		<h4 id="kanoon"> کانون جوانه ها </h4>
+		<h4 id="mooze"> موزه بانک </h4>
+
+
+	</div>
+	<div id="ertebat">
+		<div id="s1">
+			<h4>
+				ارتباط با ما
+			</h4>
+			<div id="s12">
+				<h5>
+					مرکز ارتباط مردمی<br>
+					افکارسنجی<br>
+					<br>
+					روابط عمومی<br>
+					سامانه رسیدگی به شکایات<br>
+					سامانه نظارت مردمی وزارت امور اقتصادی و دارایی<br>
+					سامانه ثبت و پیگیری مغایرت های شتاب <br>
+					<br>
+					ارتباط با حراست<br>
+					پیگیری مغایرت ها<br>
+					سوالات متداول<br>
+					پیشنهادات و انتقادات<br>
+					رویداد ملی شو 4<br>
+					فیلم مستند"ره صد ساله"<br>
+					حمایتی به وسعت یک سرزمین
+				</h5>
+			</div>
+		</div>
+		<div class="s2">
+			<h4>
+				محاسبات
+			</h4>
+			<div id="s21">
+				<h5>
+					محاسبه سود سپرده<br>
+					محاسبه اقساط تسهیلات<br>
+					محاسبه نرخ تسهیلات در طرح صدف<br><br>
+				</h5>
+			</div>
+			<div class="s2">
+				<h4>
+					شرکت های تابعه
+				</h4>
+			</div>
+			<div id="s22">
+				<h5>
+					شرکت داده ورزی سداد<br>
+					شرکت پارس تکنولوژی سداد<br>
+					پرداخت الکترونیک سداد<br>
+					شرکت چاپ و نشر بانک ملی ایران<br>
+					شرکت گروه توسعه ملی<br>
+					کارگزاری بانک ملی ایران<br>
+					شرکت صرافی ملی ایران<br>
+					شرکت توسعه سرمایه پیشگامان پویا<br>
+					شرکت مدیریت طرح و توسعه اینده پویا
+				</h5>
+			</div>
+		</div>
+		<div id="s3">
+			<h4>
+				پیوند های بانکی
+			</h4>
+			<div id="s31">
+				<h5>
+					مشتریان و راهکار های مقابله با کرونا<br>
+					جشنواره های بانک ملی ایران<br>
+					بازدید مجازی از موزه بانک<br>
+					مسولیت های اجتماعی<br>
+					قرارداد های اعتباری<br>
+					واحد های بانک<br>
+					کانون جوانه ها<br>
+					اداره کل تطبیق و مبارزه با پولشویی و تامین مالی تروریسم<br>
+					بیمارستان بانک ملی ایران<br>
+					دانشکده پرستاری بانک ملی ایران<br>
+					شرکت ملی خدماتی تدارک<br>
+					موسسه همیاری کوثر<br>
+					اولویت های عمره 90
+				</h5>
+			</div>
+		</div>
+		<div id="s4">
+			<h4>
+				پیوند های عمومی
+			</h4>
+			<div id="s41">
+				<h5>
+					پایگاه اطلاع رسانی دفترمقام معظم رهبری<br>
+					پورتال امام خمینی(ره)<br>
+					ستاد اقامه نماز استان تهران<br>
+					پایگاه اطلاع رسانی دولت<br>
+					وزارت اقتصاد و امور دارایی<br>
+					بانک مرکزی جمهوری اسلامی ایران<br>
+					مرکز ارتباط مردمی ریاست جمهوری(سامد)<br>
+					پلیس فتا<br>
+					ستاد بازسازی عتبات عالیات<br>
+					اشنایی با بانکداری اسلامی<br>
+					پایگاه اطلاع رسانی و پایش اثار اقتصادی کرونا<br>
+					مدیریت غیر مستقیم سهام عدالت<br>
+					پایگاه اطلاع رسانی قوانین و مقررات کشور<br>
+					بازار متشکل معاملات ارزی ایران<br>
+					سایر پیوند های مرتبط
+				</h5>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
